@@ -1,0 +1,22 @@
+
+.login-box-body, .register-box-body {
+    background: #caa64a none repeat scroll 0 0;
+}
+.login-box-body button  {
+    background: #000;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.hover  {
+    background: #000;
+	color:#caa64a;
+}
+/*
+@font-face {
+    font-family: "FuturaLT";
+    src: url(css/font/FuturaLT.ttf) format("truetype");
+} 
+
+body {
+    font-family: "FuturaLT";
+}
+*/

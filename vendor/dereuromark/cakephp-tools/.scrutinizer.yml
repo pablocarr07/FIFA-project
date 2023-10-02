@@ -1,0 +1,17 @@
+imports:
+    - php
+
+filter:
+    excluded_paths:
+        - TestSuite/
+tools:
+    php_mess_detector: true
+    php_cpd:
+        excluded_dirs:
+            - TestSuite/
+    php_loc:
+        excluded_dirs:
+            - TestSuite/
+    php_pdepend:
+        excluded_dirs:
+            1: TestSuite/

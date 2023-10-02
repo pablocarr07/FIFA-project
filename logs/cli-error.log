@@ -1,0 +1,26 @@
+
+2023-10-02 13:33:40 Error: [Cake\Core\Exception\MissingPluginException] Plugin Migrations could not be found.
+Stack Trace:
+#0 C:\wamp64\www\fifa\config\bootstrap.php(194): Cake\Core\Plugin::load('Migrations')
+#1 C:\wamp64\www\fifa\bin\cake.php(31): include('C:\\wamp64\\www\\f...')
+#2 {main}
+
+
+2023-10-02 13:51:34 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serverç" could not be found.
+Stack Trace:
+#0 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('Server\xC3\xA7')
+#1 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\wamp64\www\fifa\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2023-10-02 13:51:38 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serverç" could not be found.
+Stack Trace:
+#0 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('Server\xC3\xA7')
+#1 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\wamp64\www\fifa\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\wamp64\www\fifa\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

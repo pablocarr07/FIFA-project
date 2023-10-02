@@ -1,0 +1,31 @@
+version: "3.3"
+
+networks:
+  fifa:
+
+services:
+  php:
+    # image: occitech/cakephp:5-apache
+    container_name: fifa
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8200:80"
+    volumes:
+      - ./:/var/www/html/
+    networks:
+      - fifa
+    stdin_open: true
+    tty: true
+
+
+networks:
+  fifa:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.100.0/24

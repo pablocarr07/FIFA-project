@@ -1,0 +1,43 @@
+{
+	"name": "dereuromark/cakephp-tools",
+	"type": "cakephp-plugin",
+	"description": "A CakePHP plugin containing lots of useful and reusable tools",
+	"keywords": ["cakephp", "plugin", "tools", "utils", "helpers", "components", "behaviors", "datasources"],
+	"homepage": "https://github.com/dereuromark/cakephp-tools",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mark Scherer",
+			"role": "Author",
+			"homepage": "http://www.dereuromark.de"
+		}
+	],
+	"require":{
+		"php": ">=5.4",
+		"cakephp/cakephp": "~3.1",
+		"dereuromark/cakephp-shim": "~1.0"
+	},
+	"require-dev":{
+		"mobiledetect/mobiledetectlib": "2.*",
+		"fig-r/psr2r-sniffer": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Tools\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tools\\Test\\": "tests",
+			"Cake\\Test\\": "vendor/cakephp/cakephp/tests",
+			"TestApp\\": "tests/TestApp"
+		}
+	},
+	"suggest": {
+		"yangqi/htmldom": "For HtmlDom usage"
+	},
+	"support":{
+		"source": "https://github.com/dereuromark/cakephp-tools",
+		"issues": "https://github.com/dereuromark/cakephp-tools/issues"
+	}
+}

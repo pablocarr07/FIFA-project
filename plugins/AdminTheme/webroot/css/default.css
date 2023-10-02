@@ -1,0 +1,48 @@
+
+.skin-red .main-header .navbar {
+    background-color: #caa64a;
+}		
+	
+
+.skin-red .main-header .navbar .nav > li > a {
+	color: #000;
+}
+
+
+.main-header .navbar-brand {
+    color: #000;
+}
+
+.skin-red .main-header .navbar .nav > li > a:hover {
+    color: #000;	
+}
+
+.table thead a, .table thead {
+	color:#caa64a;
+}
+
+.skin-red .main-header li.user-header {
+    background-color: #caa64a;	
+}
+.dropdown-menu li p small, .dropdown-menu li p {
+	font-size:12px !important;
+}
+
+.btn-primary{
+	background-color:none;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size:12px;
+}
+.btn-group-lg > .btn, .btn-lg, .dropdown-menu{
+	font-size:12px;
+}
+
+form label{
+	color: #caa64a;
+}
+.actions a{
+	color: #9a999d;
+}

@@ -1,0 +1,66 @@
+{
+    "name": "cakephp/app",
+    "description": "CakePHP skeleton app",
+    "homepage": "http://cakephp.org",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "~3.2",
+        "mobiledetect/mobiledetectlib": "2.*",
+        "cakephp/migrations": "~1.0",
+        "cakephp/plugin-installer": "*",
+        "elboletaire/twbs-cake-plugin": "^3.4",
+        "pgbi/cakephp3-soft-delete": "~1.0",
+        "dereuromark/cakephp-tinyauth": "^1.6",
+        "dereuromark/cakephp-tools": "dev-master",
+        "gourmet/knp-menu": "~0.4",
+        "xety/cake3-upload": "1.*",
+        "phpseclib/phpseclib": "^2.0",
+        "kongka/cakephp-csvview": "^3.2",
+        "friendsofcake/cakephp-csvview": "3.2.2"
+    },
+    "require-dev": {
+        "psy/psysh": "@stable",
+        "cakephp/debug_kit": "~3.2",
+        "cakephp/bake": "~1.1"
+    },
+    "suggest": {
+        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src",
+            "AuditLog\\": "./plugins/AuditLog/src",
+            "Search\\": "./plugins/Search/src",
+            "AdminTheme\\": "./plugins/AdminTheme/src"
+        },
+        "classmap": [
+            "vendor/Fifa/",
+            "vendor/PHPExcel_1.8.0_doc/Classes/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+            "AuditLog\\Test\\": "./plugins/AuditLog/tests",
+            "Search\\Test\\": "./plugins/Search/tests",
+            "AdminTheme\\Test\\": "./plugins/AdminTheme/tests"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "App\\Console\\Installer::postInstall",
+        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
+        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "aura/installer-default": true,
+            "cakephp/plugin-installer": true
+        }
+    }
+}

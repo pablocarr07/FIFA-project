@@ -1,0 +1,16 @@
+/logs/*
+!/logs/error.log
+!/logs/debug.log
+!/logs/cli-error.log
+!/logs/cli-debug.log
+/tmp/*
+!/tmp/cache/views/empty
+!/tmp/cache/models/empty
+!/tmp/cache/persistent/empty
+!/tmp/sessions/empty
+!/tmp/tests/empty
+/fifa/signature/*
+!/fifa/signature/empty
+/signature/*
+!/signature/empty
+/webroot/uploads/cdprequests/*

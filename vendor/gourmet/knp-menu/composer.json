@@ -1,0 +1,40 @@
+{
+	"name": "gourmet/knp-menu"
+	, "description": "KnpMenu for CakePHP 3"
+	, "type": "cakephp-plugin"
+	, "keywords": [
+		"cakephp"
+		, "knp"
+		, "menu"
+	]
+	, "homepage": "http://github.com/gourmet/knp-menu"
+	, "license": "MIT"
+	, "authors": [
+		{
+			"name": "Jad Bitar"
+			, "homepage": "http://jadb.io"
+			, "role": "Author"
+		}
+	]
+	, "support": {
+		"issues": "http://github.com/gourmet/knp-menu/issues"
+		, "source": "http://github.com/gourmet/knp-menu"
+	}
+	, "require": {
+		"cakephp/cakephp": "~3.0"
+		, "knplabs/knp-menu": "~2.0"
+	}
+	, "require-dev": {
+		"phpunit/phpunit": "4.*"
+	}
+	, "autoload": {
+		"psr-4": {
+			"Gourmet\\KnpMenu\\": "src"
+		}
+	}
+	, "autoload-dev": {
+		"psr-4": {
+			"Gourmet\\KnpMenu\\Test\\": "tests"
+		}
+	}
+}
